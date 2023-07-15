@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual seu nome: ')
+        var valor = window.prompt('Quanto você recebe: ')
+        window.alert(`Olá ${nome}! Seu  nome tem ${nome.length} letras.`)
+        document.writeln(`Nome maiúsculo: ${nome.toUpperCase()}`)
+        document.writeln(`Nome minúsculo: ${nome.toLowerCase()}`)
+        document.writeln(`Você recebe ${valor.toLocaleString('pt-BR' , {style: 'currency', currency: 'BRL'})}`)
+        valor = valor.toFixed(2)
+        document.writeln(`Você recebe ${valor}`)
+    </script>
+</body>
+
+</html>
