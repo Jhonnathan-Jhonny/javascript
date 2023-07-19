@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+
+        div {
+            position: relative;
+        }
+
+        div#area {
+            font: normal 20pt Arial;
+            background-color: #328a32;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+
+            position: absolute;
+
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <h1>Aprendendo eventos com DOM</h1>
+    <div id="area" onclick="clickDiv()" onmouseenter="entrou()" onmouseout="saiu()">
+        Interaja...
+    </div>
+    <script>
+        function clickDiv(){
+            var a = document.getElementById('area')
+            a.innerText = 'Clicou!!!' 
+        }
+
+        function entrou(){
+            var a = document.getElementById('area')
+            a.style.backgroundColor = 'blue'
+            a.innerText = 'entrou'
+        }
+        function saiu(){
+            var a = document.getElementById('area')
+            a.style.backgroundColor = 'red'
+            a.innerText = 'saiu'
+        }
+    </script>
+</body>
+</html>
