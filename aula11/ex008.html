@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naturalidade</title>
+</head>
+<body>
+    <h1>Where are you from?</h1>
+    Digite aqui: <input type="text" name="txtnatu" id="natu" >
+    <input type="button" value="ver" onclick="naturalidade()">
+    <div id="res">
+        Resultado
+    </div>
+    <script>
+        function naturalidade(){
+            var info = document.getElementById('natu').value
+            var res = document.getElementById('res')
+            if(info == 'brasil'){
+                res.innerHTML = `Você é <strong>brasileiro!</strong>`
+            }
+            else {
+                res.innerHTML = `Você é <strong>estrangeiro!</strong>`
+            }
+        }
+    </script>
+</body>
+</html>
