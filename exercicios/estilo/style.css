@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightskyblue;
+}
+
+header > h1 {
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+
+section {
+    margin: auto;
+    width: 450px;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+section > form > div#data {
+    padding: 20px;
+}
+section > form > div#sexo {
+    padding-left: 20px;
+}
+
+footer > p {
+    text-align: center;
+    padding-top: 30px;
+    color: white;
+}
