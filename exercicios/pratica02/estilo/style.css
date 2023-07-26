@@ -19,7 +19,6 @@ header > h1 {
 section {
     margin: auto;
     width: 450px;
-    height: 400px;
     background-color: white;
     border-radius: 10px;
 }
@@ -29,6 +28,14 @@ section > form > div#data {
 }
 section > form > div#sexo {
     padding-left: 20px;
+}
+
+section > form > div#botao {
+    padding: 20px;
+}
+
+div#res {
+    padding: 0px 20px 20px 20px;
 }
 
 footer > p {

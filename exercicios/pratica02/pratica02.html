@@ -14,17 +14,21 @@
     <section>
         <form action="">
             <div id="data">
-                <label for="idata">Data de nascimento: </label>
-                <input type="date" name="ndata" id="idata">
+                <label for="idata">Ano de nascimento:</label>
+                <input type="number" name="ndata" id="idata">
             </div>
             <div id="sexo">
-                <label for="isexo">Sexualidade</label>
-                <input type="text" name="nsexo" id="isexo">
+                <label for="nsexo">Sexo:</label>      
+                <input type="radio" name="nsexo" id="imasc">
+                <label for="imasc">Masculino</label>
+                <input type="radio" name="nsexo" id="ifem" checked>
+                <label for="ifem">Feminino</label>
             </div>
-            <div>
-                <input type="button" value="Verificar" onclick="verificar">
+            <div id="botao">
+                <input type="button" value="Verificar" onclick="verificar()">
             </div>
         </form>
+        <div id="res">Preencha os dados acima para ver o resultado!</div>
     </section>
     <footer>
         <p>&copy;Jhonnathan Jhonny</p>
