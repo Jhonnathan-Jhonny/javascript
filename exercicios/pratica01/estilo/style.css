@@ -19,9 +19,12 @@ header > h1 {
 section {
     margin: auto;
     width: 450px;
-    height: 400px;
     background-color: white;
     border-radius: 10px;
+}
+div{
+    text-align: center;
+    padding: 20px;
 }
 
 section > form > div#data {
